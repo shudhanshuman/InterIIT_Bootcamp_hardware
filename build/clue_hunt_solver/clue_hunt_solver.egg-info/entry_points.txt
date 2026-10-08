@@ -1,0 +1,4 @@
+[console_scripts]
+follower_node = clue_hunt_solver.follower_node:main
+hunt_node = clue_hunt_solver.hunt_node:main
+

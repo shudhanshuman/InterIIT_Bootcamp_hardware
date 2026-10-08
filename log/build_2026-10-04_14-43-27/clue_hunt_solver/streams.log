@@ -1,0 +1,27 @@
+[3.274s] Invoking command in '/home/robo/hunt_ws/build/clue_hunt_solver': PYTHONPATH=/home/robo/hunt_ws/build/clue_hunt_solver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robo/hunt_ws/install/clue_hunt_solver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robo/hunt_ws/build/clue_hunt_solver/build --no-deps symlink_data
+[3.530s] running develop
+[3.696s] running egg_info
+[3.696s] creating clue_hunt_solver.egg-info
+[3.696s] writing clue_hunt_solver.egg-info/PKG-INFO
+[3.696s] writing dependency_links to clue_hunt_solver.egg-info/dependency_links.txt
+[3.696s] writing entry points to clue_hunt_solver.egg-info/entry_points.txt
+[3.697s] writing requirements to clue_hunt_solver.egg-info/requires.txt
+[3.697s] writing top-level names to clue_hunt_solver.egg-info/top_level.txt
+[3.697s] writing manifest file 'clue_hunt_solver.egg-info/SOURCES.txt'
+[3.698s] reading manifest file 'clue_hunt_solver.egg-info/SOURCES.txt'
+[3.698s] writing manifest file 'clue_hunt_solver.egg-info/SOURCES.txt'
+[3.699s] running build_ext
+[3.700s] Creating /home/robo/hunt_ws/install/clue_hunt_solver/lib/python3.10/site-packages/clue-hunt-solver.egg-link (link to .)
+[3.700s] Installing follower_node script to /home/robo/hunt_ws/install/clue_hunt_solver/lib/clue_hunt_solver
+[3.701s] Installing hunt_node script to /home/robo/hunt_ws/install/clue_hunt_solver/lib/clue_hunt_solver
+[3.701s] 
+[3.701s] Installed /home/robo/hunt_ws/build/clue_hunt_solver
+[3.701s] running symlink_data
+[3.701s] creating /home/robo/hunt_ws/install/clue_hunt_solver/share/ament_index
+[3.701s] creating /home/robo/hunt_ws/install/clue_hunt_solver/share/ament_index/resource_index
+[3.701s] creating /home/robo/hunt_ws/install/clue_hunt_solver/share/ament_index/resource_index/packages
+[3.701s] symbolically linking /home/robo/hunt_ws/build/clue_hunt_solver/resource/clue_hunt_solver -> /home/robo/hunt_ws/install/clue_hunt_solver/share/ament_index/resource_index/packages
+[3.701s] symbolically linking /home/robo/hunt_ws/build/clue_hunt_solver/package.xml -> /home/robo/hunt_ws/install/clue_hunt_solver/share/clue_hunt_solver
+[3.701s] creating /home/robo/hunt_ws/install/clue_hunt_solver/share/clue_hunt_solver/launch
+[3.702s] symbolically linking /home/robo/hunt_ws/build/clue_hunt_solver/launch/hunt.launch.py -> /home/robo/hunt_ws/install/clue_hunt_solver/share/clue_hunt_solver/launch
+[3.723s] Invoked command in '/home/robo/hunt_ws/build/clue_hunt_solver' returned '0': PYTHONPATH=/home/robo/hunt_ws/build/clue_hunt_solver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robo/hunt_ws/install/clue_hunt_solver/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/robo/hunt_ws/build/clue_hunt_solver/build --no-deps symlink_data

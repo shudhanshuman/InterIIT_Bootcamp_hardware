@@ -1,0 +1,19 @@
+# ROS 2 / colcon build outputs
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# CMake
+CMakeFiles/
+
+# Temporary and editor files
+*.tmp
+*.swp
+*.swo
+.vscode/
+.idea/

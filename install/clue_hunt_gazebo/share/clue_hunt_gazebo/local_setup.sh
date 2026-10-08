@@ -1,0 +1,1 @@
+/home/robo/hunt_ws/build/clue_hunt_gazebo/ament_cmake_environment_hooks/local_setup.sh

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<sdf version="1.8">
+  <model name="roboclub_banner">
+    <static>true</static>
+    <link name="link">
+      <visual name="banner">
+        <geometry><mesh><uri>model://roboclub_banner/meshes/roboclub_banner.obj</uri></mesh></geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

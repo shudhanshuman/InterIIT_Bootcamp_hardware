@@ -1,0 +1,9 @@
+source;share/clue_hunt_solver/hook/pythonpath.ps1
+source;share/clue_hunt_solver/hook/pythonpath.dsv
+source;share/clue_hunt_solver/hook/pythonpath.sh
+source;share/clue_hunt_solver/hook/ament_prefix_path.ps1
+source;share/clue_hunt_solver/hook/ament_prefix_path.dsv
+source;share/clue_hunt_solver/hook/ament_prefix_path.sh
+source;../../build/clue_hunt_solver/share/clue_hunt_solver/hook/pythonpath_develop.ps1
+source;../../build/clue_hunt_solver/share/clue_hunt_solver/hook/pythonpath_develop.dsv
+source;../../build/clue_hunt_solver/share/clue_hunt_solver/hook/pythonpath_develop.sh

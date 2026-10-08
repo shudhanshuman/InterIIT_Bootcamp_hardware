@@ -1,0 +1,4 @@
+source;share/clue_hunt_navigation/local_setup.bash
+source;share/clue_hunt_navigation/local_setup.dsv
+source;share/clue_hunt_navigation/local_setup.sh
+source;share/clue_hunt_navigation/local_setup.zsh

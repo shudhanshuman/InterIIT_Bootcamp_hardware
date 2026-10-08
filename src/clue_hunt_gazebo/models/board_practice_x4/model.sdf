@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<sdf version="1.8">
+  <model name="board_practice_x4">
+    <static>true</static>
+    <link name="link">
+      <collision name="body_collision">
+        <pose>0 0 0.185 0 0 0</pose>
+        <geometry><box><size>0.04 0.64 0.37</size></box></geometry>
+      </collision>
+      <visual name="body">
+        <pose>0 0 0.185 0 0 0</pose>
+        <geometry><box><size>0.04 0.64 0.37</size></box></geometry>
+        <material>
+          <ambient>0.30 0.30 0.33 1</ambient>
+          <diffuse>0.30 0.30 0.33 1</diffuse>
+        </material>
+      </visual>
+      <visual name="face">
+        <geometry><mesh><uri>model://board_practice_x4/meshes/board_practice_x4.obj</uri></mesh></geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

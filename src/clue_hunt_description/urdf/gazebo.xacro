@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<!--
+  Gazebo Fortress (Ignition Gazebo 6) sensors and system plugins for Hunter.
+  All plugins used here ship with Gazebo Fortress - nothing to download.
+
+  NOTE: when a URDF is converted to SDF, links joined by fixed joints are
+  merged into their parent. That is why every sensor sets
+  <ignition_frame_id> - otherwise the frame_id in the ROS messages would be
+  "hunter/base_footprint/..." instead of our TF frame names.
+
+  Topics/frames get $(arg topic_ns) / $(arg prefix) in front for the follower
+  (e.g. /follower/camera/image_raw, frame follower/cam_optical_link).
+
+  Gazebo topic            -> ROS topic (see clue_hunt_gazebo/launch/sim.launch.py bridge)
+  cmd_vel                 <- /cmd_vel
+  odom, tf                -> /odom, /tf
+  joint_states            -> /joint_states
+  scan                    -> /scan
+  camera/image_raw        -> /camera/image_raw
+  camera/camera_info      -> /camera/camera_info
+  imu                     -> /imu
+  /model/hunter/odometry  -> ground truth, used ONLY by the referee (never bridged for you)
+-->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="hunter_gazebo">
+
+    <!-- ===================== LiDAR ===================== -->
+    <xacro:if value="$(arg lidar)">
+    <gazebo reference="lidar_link">
+      <sensor name="lidar" type="gpu_lidar">
+        <topic>$(arg topic_ns)scan</topic>
+        <ignition_frame_id>$(arg prefix)lidar_link</ignition_frame_id>
+        <update_rate>10</update_rate>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <lidar>
+          <scan>
+            <horizontal>
+              <samples>360</samples>
+              <resolution>1</resolution>
+              <min_angle>-3.14159</min_angle>
+              <max_angle>3.14159</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>1</samples>
+              <resolution>1</resolution>
+              <min_angle>0</min_angle>
+              <max_angle>0</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.12</min>
+            <max>12.0</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </lidar>
+      </sensor>
+    </gazebo>
+    </xacro:if>
+
+    <!-- ===================== Camera ===================== -->
+    <gazebo reference="camera_link">
+      <sensor name="camera" type="camera">
+        <topic>$(arg topic_ns)camera/image_raw</topic>
+        <ignition_frame_id>$(arg prefix)cam_optical_link</ignition_frame_id>
+        <update_rate>15</update_rate>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <camera>
+          <horizontal_fov>1.0472</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.05</near>
+            <far>25.0</far>
+          </clip>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.007</stddev>
+          </noise>
+        </camera>
+      </sensor>
+    </gazebo>
+
+    <!-- ===================== IMU ===================== -->
+    <xacro:if value="$(arg imu)">
+    <gazebo reference="imu_link">
+      <sensor name="imu" type="imu">
+        <topic>$(arg topic_ns)imu</topic>
+        <ignition_frame_id>$(arg prefix)imu_link</ignition_frame_id>
+        <update_rate>100</update_rate>
+        <always_on>true</always_on>
+      </sensor>
+    </gazebo>
+    </xacro:if>
+
+    <!-- ===================== System plugins ===================== -->
+    <gazebo>
+      <plugin filename="ignition-gazebo-diff-drive-system"
+              name="ignition::gazebo::systems::DiffDrive">
+        <left_joint>left_wheel_joint</left_joint>
+        <right_joint>right_wheel_joint</right_joint>
+        <wheel_separation>0.34</wheel_separation>
+        <wheel_radius>0.06</wheel_radius>
+        <max_linear_acceleration>1.5</max_linear_acceleration>
+        <max_angular_acceleration>4.0</max_angular_acceleration>
+        <topic>$(arg topic_ns)cmd_vel</topic>
+        <odom_topic>$(arg topic_ns)odom</odom_topic>
+        <tf_topic>$(arg topic_ns)tf</tf_topic>
+        <frame_id>$(arg prefix)odom</frame_id>
+        <child_frame_id>$(arg prefix)base_footprint</child_frame_id>
+        <odom_publish_frequency>30</odom_publish_frequency>
+      </plugin>
+
+      <plugin filename="ignition-gazebo-joint-state-publisher-system"
+              name="ignition::gazebo::systems::JointStatePublisher">
+        <topic>$(arg topic_ns)joint_states</topic>
+      </plugin>
+
+      <!-- Ground-truth pose for the referee. Publishes on /model/<model name>/odometry
+           (/model/hunter/odometry and /model/follower/odometry).
+           Candidates' code must NOT use it (it is not bridged by sim.launch.py). -->
+      <plugin filename="ignition-gazebo-odometry-publisher-system"
+              name="ignition::gazebo::systems::OdometryPublisher">
+        <odom_frame>world</odom_frame>
+        <robot_base_frame>$(arg prefix)ground_truth</robot_base_frame>
+        <odom_publish_frequency>20</odom_publish_frequency>
+        <dimensions>2</dimensions>
+      </plugin>
+    </gazebo>
+
+  </xacro:macro>
+</robot>

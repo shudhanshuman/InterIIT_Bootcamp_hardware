@@ -1,0 +1,77 @@
+-- The C compiler identification is GNU 12.3.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/robo/hunt_ws/build/clue_hunt_gazebo
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/launch/sim.launch.py
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/worlds/practice.sdf
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b1/meshes/board_practice_b1.mtl
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b1/meshes/board_practice_b1.obj
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b1/meshes/board_practice_b1.png
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b1/model.config
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b1/model.sdf
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b2/meshes/board_practice_b2.mtl
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b2/meshes/board_practice_b2.obj
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b2/meshes/board_practice_b2.png
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b2/model.config
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b2/model.sdf
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b3/meshes/board_practice_b3.mtl
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b3/meshes/board_practice_b3.obj
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b3/meshes/board_practice_b3.png
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b3/model.config
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b3/model.sdf
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b4/meshes/board_practice_b4.mtl
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b4/meshes/board_practice_b4.obj
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b4/meshes/board_practice_b4.png
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b4/model.config
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b4/model.sdf
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b5/meshes/board_practice_b5.mtl
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b5/meshes/board_practice_b5.obj
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b5/meshes/board_practice_b5.png
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b5/model.config
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_b5/model.sdf
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_d7/meshes/board_practice_d7.mtl
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_d7/meshes/board_practice_d7.obj
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_d7/meshes/board_practice_d7.png
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_d7/model.config
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_d7/model.sdf
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_x4/meshes/board_practice_x4.mtl
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_x4/meshes/board_practice_x4.obj
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_x4/meshes/board_practice_x4.png
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_x4/model.config
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/board_practice_x4/model.sdf
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/roboclub_banner/meshes/roboclub_banner.mtl
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/roboclub_banner/meshes/roboclub_banner.obj
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/roboclub_banner/meshes/roboclub_banner.png
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/roboclub_banner/model.config
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/models/roboclub_banner/model.sdf
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/ament_index/resource_index/package_run_dependencies/clue_hunt_gazebo
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/ament_index/resource_index/parent_prefix_path/clue_hunt_gazebo
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/environment/ament_prefix_path.sh
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/environment/ament_prefix_path.dsv
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/environment/path.sh
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/environment/path.dsv
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/local_setup.bash
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/local_setup.sh
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/local_setup.zsh
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/local_setup.dsv
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/package.dsv
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/ament_index/resource_index/packages/clue_hunt_gazebo
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/cmake/clue_hunt_gazeboConfig.cmake
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/cmake/clue_hunt_gazeboConfig-version.cmake
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_gazebo/share/clue_hunt_gazebo/package.xml

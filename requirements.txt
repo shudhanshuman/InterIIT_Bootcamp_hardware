@@ -1,0 +1,24 @@
+# Clue Chain Hunt — Python dependencies
+# Stack: Ubuntu 22.04 · Python 3.10 · ROS 2 Humble · Gazebo Fortress 6.x
+#
+# Install:
+#   pip install -r requirements.txt
+#
+# NOTE: ROS 2 packages (rclpy, cv_bridge, std_msgs, geometry_msgs, sensor_msgs,
+# nav_msgs, nav2_msgs, tf2_ros, nav2_simple_commander, ament_index_python, ...)
+# come from APT (see README.md), NOT from pip. Never pip-install those.
+# System lib for pyzbar:  sudo apt install -y libzbar0
+
+# --- Required runtime (hunt_node + follower_node tag-only default) ---
+opencv-python==4.11.0.86  # ArUco DICT_4X4_50 detect + solvePnP (IPPE_SQUARE) + QR crop/rectify
+numpy==1.26.4             # keep 1.x: cv_bridge on Humble breaks with numpy 2.x
+PyYAML==6.0.2             # search.py tour/grid yaml loading (search_viewpoints.yaml)
+pyzbar==0.1.9             # QR fallback decoder (needs system libzbar0, see above)
+Pillow==9.0.1             # offline diagram scripts + training-data collection script
+
+# --- OPTIONAL: follower YOLO verify (default run is tag-only, needs NONE of this) ---
+# YOLO loads lazily only with `-p use_yolo:=true -p yolo_weights:=<file.pt>`.
+# torch core-dumps on import in some VMs (see last_phase.md) — install and use
+# these ONLY on a healthy machine. Keep commented out for the default setup.
+# ultralytics==8.4.115
+# torch==2.3.0

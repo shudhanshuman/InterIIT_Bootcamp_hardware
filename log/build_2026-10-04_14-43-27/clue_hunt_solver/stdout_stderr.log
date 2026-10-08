@@ -1,0 +1,25 @@
+running develop
+running egg_info
+creating clue_hunt_solver.egg-info
+writing clue_hunt_solver.egg-info/PKG-INFO
+writing dependency_links to clue_hunt_solver.egg-info/dependency_links.txt
+writing entry points to clue_hunt_solver.egg-info/entry_points.txt
+writing requirements to clue_hunt_solver.egg-info/requires.txt
+writing top-level names to clue_hunt_solver.egg-info/top_level.txt
+writing manifest file 'clue_hunt_solver.egg-info/SOURCES.txt'
+reading manifest file 'clue_hunt_solver.egg-info/SOURCES.txt'
+writing manifest file 'clue_hunt_solver.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/robo/hunt_ws/install/clue_hunt_solver/lib/python3.10/site-packages/clue-hunt-solver.egg-link (link to .)
+Installing follower_node script to /home/robo/hunt_ws/install/clue_hunt_solver/lib/clue_hunt_solver
+Installing hunt_node script to /home/robo/hunt_ws/install/clue_hunt_solver/lib/clue_hunt_solver
+
+Installed /home/robo/hunt_ws/build/clue_hunt_solver
+running symlink_data
+creating /home/robo/hunt_ws/install/clue_hunt_solver/share/ament_index
+creating /home/robo/hunt_ws/install/clue_hunt_solver/share/ament_index/resource_index
+creating /home/robo/hunt_ws/install/clue_hunt_solver/share/ament_index/resource_index/packages
+symbolically linking /home/robo/hunt_ws/build/clue_hunt_solver/resource/clue_hunt_solver -> /home/robo/hunt_ws/install/clue_hunt_solver/share/ament_index/resource_index/packages
+symbolically linking /home/robo/hunt_ws/build/clue_hunt_solver/package.xml -> /home/robo/hunt_ws/install/clue_hunt_solver/share/clue_hunt_solver
+creating /home/robo/hunt_ws/install/clue_hunt_solver/share/clue_hunt_solver/launch
+symbolically linking /home/robo/hunt_ws/build/clue_hunt_solver/launch/hunt.launch.py -> /home/robo/hunt_ws/install/clue_hunt_solver/share/clue_hunt_solver/launch

@@ -1,0 +1,1 @@
+/home/robo/hunt_ws/build/clue_hunt_navigation/ament_cmake_core/clue_hunt_navigationConfig-version.cmake

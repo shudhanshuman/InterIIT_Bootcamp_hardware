@@ -1,0 +1,40 @@
+-- The C compiler identification is GNU 12.3.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/robo/hunt_ws/build/clue_hunt_navigation
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_navigation/share/clue_hunt_navigation/config/nav2_params.yaml
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_navigation/share/clue_hunt_navigation/config/slam_params.yaml
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_navigation/share/clue_hunt_navigation/launch/mapping.launch.py
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_navigation/share/clue_hunt_navigation/launch/navigation.launch.py
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_navigation/share/clue_hunt_navigation/rviz/hunt.rviz
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_navigation/share/ament_index/resource_index/package_run_dependencies/clue_hunt_navigation
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_navigation/share/ament_index/resource_index/parent_prefix_path/clue_hunt_navigation
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_navigation/share/clue_hunt_navigation/environment/ament_prefix_path.sh
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_navigation/share/clue_hunt_navigation/environment/ament_prefix_path.dsv
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_navigation/share/clue_hunt_navigation/environment/path.sh
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_navigation/share/clue_hunt_navigation/environment/path.dsv
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_navigation/share/clue_hunt_navigation/local_setup.bash
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_navigation/share/clue_hunt_navigation/local_setup.sh
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_navigation/share/clue_hunt_navigation/local_setup.zsh
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_navigation/share/clue_hunt_navigation/local_setup.dsv
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_navigation/share/clue_hunt_navigation/package.dsv
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_navigation/share/ament_index/resource_index/packages/clue_hunt_navigation
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_navigation/share/clue_hunt_navigation/cmake/clue_hunt_navigationConfig.cmake
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_navigation/share/clue_hunt_navigation/cmake/clue_hunt_navigationConfig-version.cmake
+-- Symlinking: /home/robo/hunt_ws/install/clue_hunt_navigation/share/clue_hunt_navigation/package.xml
